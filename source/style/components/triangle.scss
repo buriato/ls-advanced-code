@@ -1,0 +1,31 @@
+.triangle {
+  height: 150px;
+  width: 100%;
+  svg {
+    height: inherit;
+    width: inherit;
+    fill: inherit;
+  }
+  &_fill {
+    &_white {
+      fill: $white;
+    }
+    &_beige {
+      fill: $beige;
+    }
+  }
+}
+
+.about__left-triangle,
+.about__left-triangle {
+  position: absolute;
+  bottom: 100%;
+}
+
+.about__left-triangle {
+  left: 0;
+}
+
+.about__right-triangle {
+  right: 0;
+}
