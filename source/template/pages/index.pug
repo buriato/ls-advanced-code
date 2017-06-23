@@ -29,9 +29,13 @@ block content
   section.section.about
     .about__left
       .triangle.triangle_fill_white.about__left-triangle
+        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+          polygon(points="0,0 0,150 1000,150")
+
       .about__left-title
-        .block-title 
-          | Обо мне
+        +block-title('about-header', 'Обо мне')
+        //- .block-title(style="background-image: url('/assets/img/decor/about-header.png')")
+          //- .block-title__text Обо мне
       .about__left-content
         .user-description
           .user-description__image
@@ -43,6 +47,8 @@ block content
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
     .about__right
       .triangle.triangle_fill_beige.about__left-triangle
+        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+          polygon(points="1000,0 1000,150 0,150")
       .about__right-title
         .block-subtitle
       .about__right-description

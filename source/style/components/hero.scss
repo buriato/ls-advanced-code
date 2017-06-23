@@ -12,3 +12,19 @@
   position: relative;
   height: 100%;
 }
+
+.hero__title {
+  right: 0;
+  left: 0;
+  @include centered(y);
+}
+
+.hero__user {
+  @include centered();
+  text-align: center;
+}
+
+.hero__scroll-button {
+  bottom: 50px;
+  @include centered(x);
+}
