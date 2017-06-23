@@ -3,34 +3,12 @@
 }
 
 .hero__bg {
-  position: absolute;
-  top: 0;
-  left: 50%;
   width: 1920px;
+  position: absolute;
   display: block;
-  transform: translateX(-50%);
 }
 
 .hero__container {
   position: relative;
   height: 100%;
-}
-
-.hero__user {
-  text-align: center;
-}
-
-.hero__title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.hero__user {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
