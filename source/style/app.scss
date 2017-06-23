@@ -1,5 +1,4 @@
-body {
-  margin: 0;
-}
+@import "layout/fonts.scss";
+@import "layout/base.scss";
 
-@import 'common/greating';
+@import "components/**/*";

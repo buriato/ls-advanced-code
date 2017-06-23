@@ -1,7 +1,7 @@
 {
   "name": "loftschool-builder",
   "scripts": {
-    "gulp" : "gulp"
+    "gulp": "gulp"
   },
   "devDependencies": {
     "browser-sync": "~2.18.7",
@@ -23,7 +23,8 @@
     "gulp-svgmin": "~1.2.2"
   },
   "dependencies": {
-    "normalize.css": "~7.0.0",
-    "jquery": "~3.2.1"
+    "gulp-sass-glob": "^1.0.8",
+    "jquery": "~3.2.1",
+    "normalize.css": "~7.0.0"
   }
 }
