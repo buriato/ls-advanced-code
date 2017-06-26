@@ -1,0 +1,33 @@
+.block-subtitle {
+  display: inline-block;
+  @include bernier();
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 40px;
+  max-width: 360px;
+  text-align: center;
+
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 22px;
+    height: 5px;
+    background: rgba($titles-color, .2);
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  &:before {
+    left: 0;
+  }
+}
+
+
+
+
+

@@ -1,3 +1,7 @@
+html {
+  font-size: 14px;
+}
+
 body, html {
   margin: 0;
   height: 100%;
@@ -5,9 +9,9 @@ body, html {
 
 body {
 	font-family: "Roboto", Arial, sans-serif;
-	font-size: 14px;
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
+  color: $font-color;
 }
 
 .wrapper {
@@ -20,4 +24,12 @@ ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }

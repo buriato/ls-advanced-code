@@ -37,10 +37,10 @@ block content
       .about__left-content
         .user-description
           .user-description__image
-            img.user-description__avatar
+            img(src="/assets/img/content/user-full.jpg", alt="").user-description__avatar
           .user-description__title
-            .block-subtitle
-          .user-description__text
+            .block-subtitle Кто я
+          .user-description__text.text-block
             p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
     .about__right
@@ -48,8 +48,8 @@ block content
         svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
           polygon(points="1000,0 1000,150 0,150")
       .about__right-title
-        .block-subtitle
-      .about__right-description
+        .block-subtitle Чем я могу быть вам полезен
+      .about__right-description.text-block
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
       .about__right-content
         ul.skills-list
@@ -58,10 +58,13 @@ block content
               .skills-row
                 .skills-row__title #{item}
                 ul.skills-row__list
-                  li.skills-row__item
-                    .skill
-                      svg.skill__circle
-                      .skill__title
+                  each skill in ['Html', 'CSS', 'JavaScript']
+                    li.skills-row__item
+                      .skill
+                        svg.skill__circle(preserveAspectRatio="none" viewbox="0 0 100 100")
+                          circle(cx="50" cy="50" r="40").skill__circle-under
+                          circle(cx="50" cy="50" r="40").skill__circle-above
+                        .skill__title #{skill}
   section.section.map
     .google-map
     .contacts

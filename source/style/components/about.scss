@@ -6,12 +6,28 @@
   float: left;
   width: 50%;
   position: relative;
+  min-height: 100vh;
+  height: 1000px;
 }
 
 .about__left {
   background: $white;
+  padding: 0 80px;
+}
+
+.about__left-title, .about__right-title  {
+  text-align: center;
+}
+
+.about__right-title {
+  margin-bottom: 30px;
 }
 
 .about__right {
   background: $beige;
+  padding: 0 40px;
+}
+
+.about__right-description {
+  margin-bottom: 20px;
 }
