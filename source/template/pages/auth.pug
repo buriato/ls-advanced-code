@@ -1,0 +1,18 @@
+extends ../_template
+
+block variables
+  - var title = 'Auth Page'
+
+block content
+  .auth-container
+      .auth
+        .auth__info
+          .user
+            .user__pic
+              img(src="/assets/img/content/user.jpg", alt="").user__pic-img
+            .user__description
+              .user__name Владимир Астахов
+        .auth__btns
+          a(href="#").auth__btn Мои работы
+          a(href="#").auth__btn Обо мне
+          a(href="#").auth__btn Блог
