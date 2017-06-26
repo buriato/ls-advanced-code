@@ -27,10 +27,4 @@
   &:before {
     right: 10px;
   }
-
-  @include tablets() {
-    &:after, &:before {
-      display: none;
-    }
-  }
 }
