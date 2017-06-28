@@ -75,6 +75,10 @@
       margin-left: 30px;
     }
   }
+  .visitors__daily {
+    display: flex;
+    justify-content: space-between;
+  }
   .posts {
     display: flex;
     flex-wrap: wrap;
