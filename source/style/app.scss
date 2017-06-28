@@ -6,9 +6,13 @@ $light-beige: #f9f8f0;
 $font-color: #455a64;
 $titles-color: $gray;
 
-
+//layout
 @import "mixins/mixins.scss";
 @import "layout/fonts.scss";
 @import "layout/base.scss";
 
+//components
 @import "components/**/*";
+
+//flexbox
+@import "flexbox/styling.scss"
