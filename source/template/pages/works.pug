@@ -1,0 +1,34 @@
+extends ../_template
+
+block variables
+  - var title = 'Flexbox'
+
+block content
+  include ../common/hero.pug
+
+  section.section-header
+    .section-header__triangles
+      .section-header__col
+        .triangle.triangle_fill_white
+            svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
+              polygon(points="0,0 0,150 1000,150")
+      .section-header__col
+        .triangle.triangle_fill_white
+            svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
+              polygon(points="1000,0 1000,150 0,150")
+    .section-header__title
+      +title('Мои работы', 'works-header')
+
+  section.section.slider
+      .slider__desc
+        .slider__desc-info
+          .slider__desc-title
+            .block-subtitle Сайт школы онлайн образования
+          .slider__desc-skills
+            | HTML, css, javascript
+      .slider__display
+        .slider__display-container
+          img(src="/assets/img/content/1.png" alt="").slider__display-pic
+      .slider__btns
+        a(href="#").slider__btn.slider__btn_left
+        a(href="#").slider__btn.slider__btn_right

@@ -4,36 +4,22 @@ block variables
   - var title = 'Главная страница'
 
 block content
-  section.section.hero
-    img.hero__bg(src="/assets/img/bg/hero.jpg")
-    .hero__container
-      .hero__socials
-        ul.socials
-          each item in ['vk', 'tw', 'in']
-            li.socials__item
-              a(href=`${item}`).socials__link
-      .hamburger.hero__menu
-      .arrow-down.hero__scroll-button
-        svg.arrow-down__pic
-          use(xlink:href="/assets/img/sprite.svg#arrow-down")
-      .hero__title
-        .section-title
-          svg.section-title__pic
-            use(xlink:href="/assets/img/sprite.svg#portfolio-header")
-        .user.hero__user
-          .user__pic
-            img(src="/assets/img/content/user.jpg", alt="").user__pic-img
-          .user__description
-            .user__name Владимир Астахов
-            .user__desc Личный сайт разработчика
+  include ../common/hero
+
+  section.section-header
+    .section-header__triangles
+      .section-header__col
+        .triangle.triangle_fill_white
+            svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
+              polygon(points="0,0 0,150 1000,150")
+      .section-header__col
+        .triangle.triangle_fill_beige
+            svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
+              polygon(points="1000,0 1000,150 0,150")
   section.section.about
     .about__left
-      .triangle.triangle_fill_white.about__left-triangle
-        svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
-          polygon(points="0,0 0,150 1000,150")
       .about__left-title
-        .block-title(style="background-image: url('/assets/img/decor/about-header.png')") 
-          | Обо мне
+        +title('Обо мне', 'about-header')
       .about__left-content
         .user-description
           .user-description__image
@@ -44,9 +30,6 @@ block content
             p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
     .about__right
-      .triangle.triangle_fill_beige.about__left-triangle
-        svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
-          polygon(points="1000,0 1000,150 0,150")
       .about__right-title
         .block-subtitle Чем я могу быть вам полезен
       .about__right-description.text-block

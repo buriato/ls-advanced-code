@@ -1,0 +1,17 @@
+.section-header__triangles {
+  @extend %clearfix;
+}
+.section-header {
+  margin-top: -150px;
+  position: relative;
+}
+
+.section-header__col {
+  float: left;
+  width: 50%;
+}
+
+.section-header__title {
+  background: $white;
+  text-align: center;
+}
