@@ -95,15 +95,22 @@
 }
 
 .slider__desc {
+  width: 50%;
   height: 100%;
   display: flex;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .slider__display {
   flex: 4;
+  width: 50%;
 
   @include tablets {
     order: -1;
+    width: 100%;
   }
 }
 
