@@ -10,9 +10,12 @@ $titles-color: $gray;
 @import "mixins/mixins.scss";
 @import "layout/fonts.scss";
 @import "layout/base.scss";
+@import "layout/font-awesome.scss";
+
 
 //components
 @import "components/**/*";
 
 //flexbox
-@import "flexbox/styling.scss"
+@import "flexbox/styling.scss";
+@import "flexbox/layout.scss";
