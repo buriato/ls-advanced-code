@@ -79,41 +79,21 @@
 
 // flex alignment;
 .slider {
-  display: flex;
-  // flex-direction: column;
-  // flex-wrap:  wrap;
-  flex-flow: column wrap;
-
-  @include tablets {
-    flex-wrap: nowrap;
-    height: auto;
-  }
+  
 }
 
 .slider__desc-info {
-  margin: auto;
+
 }
 
 .slider__desc {
-  width: 50%;
-  height: 100%;
-  display: flex;
 
-  @include tablets {
-    width: 100%;
-  }
 }
 
 .slider__display {
-  flex: 4;
-  width: 50%;
 
-  @include tablets {
-    order: -1;
-    width: 100%;
-  }
 }
 
 .slider__btns {
-  flex: 1;
+
 }
