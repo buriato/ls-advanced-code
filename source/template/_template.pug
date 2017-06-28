@@ -28,7 +28,7 @@ html
     .wrapper(class=`${flex ? 'wrapper_flex' : ''}`)
       .maincontent
         block content
-    if flex
-      include ./common/footer-flex
-    else
-      include ./common/footer
+      if flex
+        include ./common/footer-flex
+      else
+        include ./common/footer
