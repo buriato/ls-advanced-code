@@ -1,0 +1,50 @@
+.scroll-parallax {
+  background: $parallax-bg;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  perspective: 100px;
+}
+
+.scroll-parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-parallax__image {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.parallax__content {
+  height: 2000px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: $bottomColor;
+  transform: translateZ(0);
+}
+
+$layers: 7;
+
+@for $layersNum from $layers through 1 {
+  .scroll-parallax__layer:nth-child(#{$layersNum}) {
+    $currentLayer: $layers - $layersNum;
+    $perspective: -$currentLayer * 50px;
+    $scale: $currentLayer * .5 + 1;
+
+    transform: translateZ($perspective) scale($scale);
+  }
+}
