@@ -1,0 +1,12 @@
+extends ../parallax.layout.pug
+
+block variables
+  - var title = 'scroll-parallax'
+
+block content
+  .scroll-parallax
+    .scroll-parallax__container
+      - for (var i = 1; i < 8; i++)
+          .scroll-parallax__layer
+            img(src=`/assets/img/parallax/layer-0${i}.png`).scroll-parallax__image
+      .parallax__content
