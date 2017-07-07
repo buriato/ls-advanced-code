@@ -1,0 +1,9 @@
+.slideshow
+  .slideshow__display
+    #preloader
+    img.slideshow__display-pic(src='/assets/img/preloader/1.jpeg', alt='')
+  ul.slideshow__list
+    - for (var i = 1; i <= 4; i++)
+      li.slideshow__item
+        a.slideshow__link(href=`/assets/img/preloader/${i}.jpeg`)
+          img(src=`/assets/img/preloader/${i}.jpeg`, alt='')

@@ -1,0 +1,18 @@
+.slider-container
+  .slider.slider_first
+    .slider__display
+      ul.slider__list
+        - for (var i = 1; i <= 4; i++)
+            li.slider__item(class=`${(i == 1) ? 'active' : ''}`)
+              img(src=`/assets/img/preloader/${i}.jpeg`, alt='')
+    
+
+  .slider.slider_opposite
+    .slider__display
+      ul.slider__list
+        - for (var i = 1; i <= 4; i++)
+            li.slider__item(class=`${(i == 1) ? 'active' : ''}`)
+              img(src=`/assets/img/preloader/${i}.jpeg`, alt='')
+
+.slider__controls
+  a.slider__controls-top(href='#') Следующий

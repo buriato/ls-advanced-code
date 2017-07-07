@@ -15,10 +15,19 @@ $sandColor: #eedcbc;
 @import "layout/base.scss";
 @import "layout/font-awesome.scss";
 
-
 //components
 @import "components/**/*";
 
 //flexbox
 @import "flexbox/styling.scss";
 @import "flexbox/layout.scss";
+
+//parallax
+@import "parallax/desert.scss";
+@import "parallax/parallax.scss";
+@import "parallax/scroll-parallax.scss";
+
+//jquery
+@import "jquery/preloader.scss";
+@import "jquery/slideshow.scss";
+@import "jquery/slider.scss";
