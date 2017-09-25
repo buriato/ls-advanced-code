@@ -1,0 +1,18 @@
+.desert {
+  position: fixed;
+  left: 0;
+  background: url('/assets/img/sand.jpg') repeat-x bottom left $sandColor;
+  width: 6112px;
+  height: 100%;
+  animation: bg 120s linear infinite;
+}
+
+@keyframes bg {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-3056px);
+  }
+}
